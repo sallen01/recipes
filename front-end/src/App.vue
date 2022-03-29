@@ -14,8 +14,9 @@
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link>
-  </div>
+    <router-link to="/admin">Admin</router-link><br>
+  <a href="https://github.com/BYUCS260/museum-sallen01" target="_blank">GitHub</a>
+</div>
 </div>
 </template>
 
