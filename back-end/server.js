@@ -36,7 +36,7 @@ const Item = mongoose.model("Item", itemSchema);
 
 
 
-app.listen(3000, () => console.log("Server listening on port 3000!"));
+app.listen(3001, () => console.log("Server listening on port 3001!"));
 
 app.post("/api/photos", upload.single("photo"), async (req, res) => {
   // Just a safety check

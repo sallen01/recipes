@@ -1,9 +1,9 @@
 <template>
   <div class="admin">
-    <h1>The Admin Page!</h1>
+    <h1>Upload a Recipe!</h1>
     <div class="heading">
       <div class="circle">1</div>
-      <h2>Add an Item</h2>
+      <h2>Add a recipe</h2>
     </div>
     <div class="add">
       <div class="form">
@@ -11,22 +11,22 @@
           <input v-model="title" placeholder="Title" />
         </div>
         <div>
-          <input v-model="description" placeholder="Description" />
+          <textarea v-model="description" placeholder="Description" />
         </div>
         <p></p>
         <input type="file" name="photo" @change="fileChanged" />
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addItem">
-        <h2>{{ addItem.title }}</h2>
-        <h2>{{ addItem.description }}</h2>
-        <img :src="addItem.path" />
+	<img :src="addItem.path" />
+	<h2>{{ addItem.title }}</h2>
+	<h2>{{ addItem.description }}</h2>
       </div>
     </div>
 
     <div class="heading">
       <div class="circle">2</div>
-      <h2>Edit/Delete an Item</h2>
+      <h2>Edit/Delete a Recipe</h2>
     </div>
     <div class="edit">
       <div class="form">
@@ -165,6 +165,7 @@ export default {
 .add,
 .edit {
   display: flex;
+	justify-content: center;
 }
 .circle {
   border-radius: 50%;
@@ -195,7 +196,7 @@ button {
 }
 /* Suggestions */
 .suggestions {
-  width: 200px;
+  width: 300px;
   border: 1px solid #ccc;
 }
 .suggestion {
@@ -204,5 +205,12 @@ button {
 .suggestion:hover {
   background-color: #5bdeff;
   color: #fff;
+}
+textarea {
+	width: 300px;
+	height: 80px;
+}
+input {
+	width: 300px;
 }
 </style>

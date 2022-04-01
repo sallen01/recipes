@@ -3,18 +3,18 @@
   <div class="header">
     <router-link to="/">
       <div class="logo">
-        <img src="/ordinary.png">
+       <img src="/ordinary.png">
       </div>
     </router-link>
     <div class="title">
-      <h1>Museum of Ordinary Objects</h1>
+      <h1>Sydney's Favorite Recipes</h1>
     </div>
   </div>
   <div class="content">
     <router-view />
   </div>
   <div class="footer">
-    <router-link to="/admin">Admin</router-link><br>
+    <router-link to="/admin">Upload</router-link><br>
   <a href="https://github.com/BYUCS260/museum-sallen01" target="_blank">GitHub</a>
 </div>
 </div>
@@ -28,7 +28,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background: #fff;
+  background: #ebebeb;
   padding: 0px;
   margin: 0px;
 }
@@ -37,8 +37,8 @@ body {
 .header {
   display: flex;
   padding: 10px 100px 0px 100px;
-  background-color: #5BDEFF;
-  color: #1C454F;
+  background-color: #ffbabc;
+  color: black;
 }
 
 .title {
@@ -58,8 +58,8 @@ body {
 .footer {
   height: 50px;
   padding: 20px 100px 0px 100px;
-  background: #e3e3e3;
-  font-size: 12px;
+  background: #ffbabc;
+  font-size: 20px;
 }
 
 .footer a {
