@@ -21,7 +21,7 @@ app.use(
 const mongoose = require("mongoose");
 
 // connect to the database
-mongoose.connect("mongodb://localhost:27017/museum", {
+mongoose.connect("mongodb://localhost:27017/recipes", {
   useNewUrlParser: true,
 });
 

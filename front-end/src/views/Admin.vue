@@ -16,9 +16,9 @@
         <button @click="upload">Upload</button>
       </div>
       <div class="upload" v-if="addItem">
-	<img :src="addItem.path" />
 	<h2>{{ addItem.title }}</h2>
 	<h2>{{ addItem.description }}</h2>
+	<img :src="addItem.path" />
       </div>
     </div>
 
