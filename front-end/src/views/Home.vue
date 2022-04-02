@@ -22,10 +22,10 @@ justify-content: center;
 }
 .image h5 {
 display: flex;
-justify-content: center;
-padding: 5px;
+padding-left: 25px;
+padding-top: 5px;
 }
-/* Masonry */
+
 *,
 *:before,
 *:after {
