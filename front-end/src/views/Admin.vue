@@ -1,9 +1,7 @@
 <template>
   <div class="admin">
-    <h1>Upload a Recipe!</h1>
     <div class="heading">
-      <div class="circle">1</div>
-      <h2>Add a recipe</h2>
+      <h1>Add a recipe</h1>
     </div>
     <div class="add">
       <div class="form">
@@ -25,8 +23,7 @@
     </div>
 
     <div class="heading">
-      <div class="circle">2</div>
-      <h2>Edit/Delete a Recipe</h2>
+      <h1>Edit/Delete a Recipe</h1>
     </div>
     <div class="edit">
       <div class="form">
@@ -197,13 +194,14 @@ button {
 /* Suggestions */
 .suggestions {
   width: 300px;
-  border: 1px solid #ccc;
+  border: 2px solid black;
+background-color: #d9ddde;
 }
 .suggestion {
   min-height: 20px;
 }
 .suggestion:hover {
-  background-color: #5bdeff;
+  background-color: #ffbabc;
   color: #fff;
 }
 textarea {

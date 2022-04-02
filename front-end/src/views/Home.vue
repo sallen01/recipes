@@ -2,11 +2,12 @@
    
 <template>
 <div class="home">
+<h1>Recipes</h1>
   <section class="image-gallery">
     <div class="image" v-for="item in items" :key="item.id">
-      <h2>{{item.title}}</h2>
+      <h1>{{item.title}}</h1>
+	<img :src="item.path" />
       <h5>{{item.description}}</h5>
-      <img :src="item.path" />
     </div>
   </section>
 
@@ -15,8 +16,14 @@
 </template>
 
 <style scoped>
-.image h2 {
-  font-style: italic;
+.image h1 {
+display: flex;
+justify-content: center;
+}
+.image h5 {
+display: flex;
+justify-content: center;
+padding: 5px;
 }
 /* Masonry */
 *,
@@ -31,10 +38,13 @@
   margin: 0 0 1.5em;
   display: inline-block;
   width: 100%;
+border: 1px solid black;
+background-color: #fff4eb;
 }
 .image img {
   width: 100px;
 height: 150px;
+margin-left: 62px;
 }
 /* Masonry on large screens */
 @media only screen and (min-width: 1024px) {
