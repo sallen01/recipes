@@ -9,7 +9,7 @@
           <input v-model="title" placeholder="Title" />
         </div>
         <div>
-          <textarea v-model="description" placeholder="Description" />
+          <textarea v-model="description" placeholder="Ingredients" />
         </div>
         <p></p>
         <input type="file" name="photo" @change="fileChanged" />
@@ -59,7 +59,6 @@
 
 <script>
 import axios from "axios";
-// is this good practice?
 export default {
   name: "Admin",
   data() {
