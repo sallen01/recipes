@@ -31,7 +31,6 @@ const itemSchema = new mongoose.Schema({
   path: String,
 });
 
-// Create a model for items in the museum.
 const Item = mongoose.model("Item", itemSchema);
 
 
@@ -63,7 +62,6 @@ app.post("/api/items", async (req, res) => {
   }
 });
 
-// Get a list of all of the items in the museum.
 app.get("/api/items", async (req, res) => {
   try {
     let items = await Item.find();
