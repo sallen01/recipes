@@ -22,10 +22,8 @@
 .image h1 {
 display: flex;
 justify-content: center;
-}
-.image h5 {
-display: flex;
-justify-content: center;
+padding-left: 7px;
+padding-right: 7px;
 padding-top: 5px;
 }
 
@@ -42,7 +40,7 @@ padding-top: 5px;
   display: inline-block;
   width: 100%;
 border: 1px solid black;
-height: 200px;
+height: 220px;
 background-color: #fff4eb;
 padding-bottom: 20px;
 }
