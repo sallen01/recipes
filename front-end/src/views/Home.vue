@@ -42,6 +42,7 @@ padding-top: 5px;
   display: inline-block;
   width: 100%;
 border: 1px solid black;
+height: 200px;
 background-color: #fff4eb;
 padding-bottom: 20px;
 }
