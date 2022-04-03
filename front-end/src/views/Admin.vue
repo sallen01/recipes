@@ -200,7 +200,7 @@ background-color: #d9ddde;
   min-height: 20px;
 }
 .suggestion:hover {
-  background-color: #ffbabc;
+  background-color: #e3d2bc;
   color: #fff;
 }
 textarea {

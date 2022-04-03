@@ -11,4 +11,7 @@
 img {
 	height: 200px;
 }
+p {
+	padding-top: 5px;
+}
 </style>

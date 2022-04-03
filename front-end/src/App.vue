@@ -1,19 +1,5 @@
 <template>
 <div id="app">
-  <!-- <div class="header">
-    <router-link to="/">
-      <div class="logo">
-       <img src="/ordinary.png">
-      </div>
-    </router-link>
-    <div class="title">
-      <h1>Sydney's Favorite Recipes</h1>
-    </div>
-  </div>
-  <div class="content">
-    <router-view />
-  </div>
--->
 <nav class="navbar navbar-expand-md navbar-light bg-light">
   <div class="container-fluid">
     <router-link to="/">
@@ -28,13 +14,23 @@
           <router-link to="/">
             <p class="nav-link">Home</p>
           </router-link>
+        </li><!--
+	<li class="nav-item">
+	<router-link to="/recipes">
+		<p class="nav-item">Recipes</p>
+	</router-link>
+	</li>-->
+        <li class="nav-item">
+          <router-link to="/recipes">
+            <p class="nav-link">Ingredients</p>
+          </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/admin">
             <p class="nav-link">Upload</p>
           </router-link>
         </li>
-        <li class="nav-item">
+	<li class="nav-item">
           <router-link to="/about">
             <p class="nav-link">About</p>
           </router-link>

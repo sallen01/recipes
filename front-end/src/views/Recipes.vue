@@ -1,32 +1,25 @@
-
-   
 <template>
-<div class="home">
-<h1>Recipes</h1>
-  <section class="image-gallery">
-    <div class="image" v-for="item in items" :key="item.id">
+<div class="ingredients">
+<h1>Ingredients</h1>
+  <section class="ingredient-gallery">
+    <div class="ingredient" v-for="item in items" :key="item.id">
       <h1>{{item.title}}</h1>
-	<div class=image-container>
-	<router-link to="/recipes">
-	<img :src="item.path" />
-	</router-link>
-	</div>
+      <h5>{{item.description}}</h5>
     </div>
   </section>
 
 </div>
 
 </template>
-
 <style scoped>
-.image h1 {
+.ingredient h1 {
 display: flex;
-justify-content: center;
+justify-content: flex-start;
+padding-left: 20px;
 }
-.image h5 {
-display: flex;
-justify-content: center;
+.ingredient h5 {
 padding-top: 5px;
+padding-left: 20px;
 }
 
 *,
@@ -34,42 +27,31 @@ padding-top: 5px;
 *:after {
   box-sizing: inherit;
 }
-.image-gallery {
-  column-gap: 1.5em;
+.ingredient-gallery {
+	column-gap: 1.5em;
 }
-.image {
+.ingredient {
   margin: 0 0 1.5em;
   display: inline-block;
   width: 100%;
 border: 1px solid black;
 background-color: #fff4eb;
-padding-bottom: 20px;
-}
-.image img {
-width: 100px;
-display: flex;
-justify-content: center;
-//width: 50%;
-}
-.image-container {
-display: flex;
-justify-content: center;
 }
 /* Masonry on large screens */
 @media only screen and (min-width: 1024px) {
-  .image-gallery {
-    column-count: 4;
+  .ingredient-gallery {
+    column-count: 1;
   }
 }
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
-  .image-gallery {
+  .ingredient-gallery {
     column-count: 3;
   }
 }
 /* Masonry on small screens */
 @media only screen and (max-width: 767px) and (min-width: 540px) {
-  .image-gallery {
+  .ingredient-gallery {
     column-count: 2;
   }
 }
@@ -79,7 +61,7 @@ justify-content: center;
 // @ is an alias to /src
 import axios from 'axios';
 export default {
-  name: 'Home',
+  name: 'Recipes',
   data() {
     return {
       items: [],
